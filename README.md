@@ -57,7 +57,7 @@ We selected a logistic regression, decision tree, random forest, and gradient bo
 
 ### Areas for Improvement
 
-Even though the results of the initial runs look promising, we need to take into consideration the number of data points that are used for this. We won't be able to get a good representation until we use the large dataset and train the model.
+Even though the results of the initial runs look promising, we need to take into consideration the number of data points that are used for this. We won't be able to get a good representation until we use the large dataset and train the model. We also need to include the validation set in the cross validation model as the model was overfitting and reached an almost perfect F-score on the training set while dropping the performance on the validation set.
 
 Once using the larger data, we might start seeing a decline in the performance as we will have more variance. However, we can tackle this by looking into new models and tune the model even further.
 
