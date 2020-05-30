@@ -53,7 +53,7 @@ The reason why I followed this methodology is that simply grouping the variables
 
 For the modelling, we transformed the features into a vector before standardising them. The column 'label' is the output (churn) and the column 'features' is the features that we engineered. After doing that, the set was split into training, testing, and validation. However, one thing to consider here is that this made the training set even smaller than it already is.
 
-We selected a logistic regression, decision tree, random forest, and gradient boosting tree as the models of choice. The best model was a gradient boosting and achieved an F1 score of 85% on the validation set. The parameters were then tuned to achieved a final performance of XX on the validation and XX on the testing.
+We selected a logistic regression, decision tree, random forest, and gradient boosting tree as the models of choice. The best model was a gradient boosting and achieved an F1 score of 85% on the validation set.
 
 #### Areas for Improvement
 
