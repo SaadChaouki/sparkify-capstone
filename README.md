@@ -24,7 +24,7 @@ The goal of the project is to train a model that can predict whether a user is l
 
 To run the code, clone this GIT repository:
 
-`git clone https://github.com/SaadChaouki/disaster-response-project.git`
+`git clone https://github.com/SaadChaouki/sparkify-capstone.git`
 
 ### Executing
 
@@ -35,13 +35,13 @@ To run the code, clone this GIT repository:
 
 ### Web Application
 
-Screenshots of the application are included [here]().
+Screenshots of the application are included [here](https://github.com/SaadChaouki/sparkify-capstone/tree/master/screenshots).
 
-### Conclusions
+## Project Summary
 
 In this project, we looked at the use of PySpark to load, clean, engineer features, and train a model. Using PySpark gives the possibility to handle large volumes of data. The dataset that was used is a sample of a larger dataset that contains the interactions of users in a fictional music service similar to Spotify. Based on their behaviour, we needed to predict whether a user is going to churn or not.
 
-#### Feature Engineering
+### Feature Engineering
 
 After cleaning the data to remove the rows that did not have any user assigned to them, we engineered a new set of features that show the change of behaviour of a user 2 weeks prior to their churn.
 
@@ -49,26 +49,24 @@ To achieve this, we set a 'date selection' for each user to extract their data. 
 
 The reason why I followed this methodology is that simply grouping the variables by user will lead to a bias as users who churned are likely to have less interactions, therefore, we will be including some of the information that happened after the user left into the model.
 
-#### Modelling
+### Modelling
 
 For the modelling, we transformed the features into a vector before standardising them. The column 'label' is the output (churn) and the column 'features' is the features that we engineered. After doing that, the set was split into training, testing, and validation. However, one thing to consider here is that this made the training set even smaller than it already is.
 
 We selected a logistic regression, decision tree, random forest, and gradient boosting tree as the models of choice. The best model was a gradient boosting and achieved an F1 score of 85% on the validation set.
 
-#### Areas for Improvement
+### Areas for Improvement
 
 Even though the results of the initial runs look promising, we need to take into consideration the number of data points that are used for this. We won't be able to get a good representation until we use the large dataset and train the model.
 
 Once using the larger data, we might start seeing a decline in the performance as we will have more variance. However, we can tackle this by looking into new models and tune the model even further.
 
 
-
-
-### Author
+## Author
 
 * [Saad Chaouki](https://www.linkedin.com/in/schaouki/)
 
-### Acknowledgements
+## Acknowledgements
 
 * [Udacity](https://www.udacity.com/)
 * [W3 School](https://www.w3schools.com/w3css/w3css_templates.asp)
