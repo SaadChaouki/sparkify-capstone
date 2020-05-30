@@ -37,6 +37,13 @@ To run the code, clone this GIT repository:
 
 Screenshots of the application are included [here]().
 
+### Conclusions
+
+In this project, we looked at the use of PySpark to load, clean, engineering features, and train a model. Using PySpark gives the possibility to handle large volumes of data. The dataset that was used is a sample of a larger dataset that contains the interactions of users in a fictional music service similar to Spotify. Based on their behaviour, we needed to predict whether a use is going to churn or not.
+
+After cleaning the data to remove the rows that did not have any user assigned to them, we engineering a new set o features that show the behaviour changes of users 2 weeks before churning. To achieve this, we set a 'date selection' for each user to extract their data. For the users who churned, this week was their last week using the services. For the users who stayed with Sparkify, the date was a random week. By doing this, we were able to see 2 weeks behaviour of users before they churned and compare it to users that did not churn. The predictions become more precise as we are predicting if a user is likely to churn in a week's time.
+
+
 ### Author
 
 * [Saad Chaouki](https://www.linkedin.com/in/schaouki/)
